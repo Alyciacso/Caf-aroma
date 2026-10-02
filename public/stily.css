@@ -1,0 +1,176 @@
+@import url("./color.css");
+@import url("./animation.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--off-white);
+    color: #333333;
+}
+
+header {
+    background: var(--marrom-escuro);
+    color: var(--branco);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd699;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+
+    background: linear-gradient(
+        120deg,
+        var(--bege-claro),
+        var(--marrom-medio)
+    );
+
+    background-size: 400% 400%;
+    animation: gradientBackground 10s linear infinite;
+}
+
+/* CORRIGIDO: text-banner */
+.text-banner {
+    width: 45%;
+    color: #ffffff;
+
+    position: relative;
+    animation: myAnimationLeft 2s ease-out forwards;
+}
+
+.text-banner h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.text-banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 28px;
+}
+
+.banner img {
+    width: 400px;
+    border-radius: 15px;
+
+    position: relative;
+    animation: myAnimation 2s ease-out forwards;
+}
+
+button {
+    background: #8b5b3c;
+    height: 40px;
+    width: 200px;
+    color: var(--branco);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    margin: 60px 0 40px;
+    font-size: 34px;
+
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+
+}
+
+.card p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    color: white;
+    background: #5c3d2e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+
+footer p {
+    line-height: 24px;
+    margin: 5px 0;
+}
+
+
